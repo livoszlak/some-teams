@@ -10,7 +10,6 @@
 
 <body>
 
-
     <?php
 
 //one file should contain a html head section which links to a .css file.
