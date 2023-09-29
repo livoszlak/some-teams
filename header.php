@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
-    <title>Some teams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dosis:wght@300;700&display=swap" rel="stylesheet">
+    <title>SOME TEAMS</title>
 </head>
 
 <body>
-    <header>
-        <h1>SOME TEAMS</h1>
-    </header>
+    <div class="header">
+        <h1>SOME (<?php require __DIR__ . '/teams.php'; ?>) TEAMS</h1>
+    </div>
 
     <?php
 
-//one file should contain a html head section which links to a .css file.
+    //one file should contain a html head section which links to a .css file.
