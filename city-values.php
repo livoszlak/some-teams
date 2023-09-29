@@ -1,3 +1,6 @@
 <?php
+require __DIR__ . '/data.php';
 
-//and the last file should display all the unique city values that exists in the data.
+foreach ($teams as $team => $city) :
+    $cityValues[] = $teams[$team]['city'];
+endforeach;
