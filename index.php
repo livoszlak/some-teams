@@ -1,5 +1,4 @@
 <?php
-// uses other .php files to create a web page.
 require __DIR__ . '/header.php';
 ?>
 
@@ -18,6 +17,7 @@ require __DIR__ . '/header.php';
         <?php require __DIR__ . '/print-data.php'; ?>
     </tbody>
 </table>
+<div class="cities"><?php require __DIR__ . '/city-values.php'; ?></div>
 </body>
 
 </html>

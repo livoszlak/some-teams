@@ -1,49 +1,82 @@
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #dddddd;
-    opacity: 100%;
-  }
-
-  th {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
 }
 
-  td, th {
-    text-align: left;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #9f9d9d;
-  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dddddd;
+  opacity: 80%;
+}
 
-  tr:last-child {
-    margin-right: 10px;
-  }
-  
+th,
+.cities {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 15px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #9f9d9d;
+}
+
+tr:last-child {
+  margin-right: 10px;
+}
+
+.cities {
+  background-color: #dddddd;
+  opacity: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-size: 2rem;
+  justify-content: space-around;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+.city {
+  padding: 0 25px;
+}
+
 .header {
-    font-family: 'Bungee Shade', cursive;
-    font-weight: 400;
-    font-size: 3rem;
-    text-align: center;
+  font-family: "Bungee Shade", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  color: #dddddd;
 }
 
 .header h1 {
-    opacity: 80%;
+  opacity: 80%;
+  display: inline;
 }
 
 body {
-    background-image: url('/assets/bg.jpg');
-    background-size: cover;
+  background-image: url("/assets/bg.jpg");
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(179, 33, 192);
 }
 
 a:hover {
-    text-transform: uppercase;
+  color: rgb(89, 33, 192);
 }

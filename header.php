@@ -15,7 +15,3 @@
     <div class="header">
         <h1>SOME (<?php require __DIR__ . '/teams.php'; ?>) TEAMS</h1>
     </div>
-
-    <?php
-
-    //one file should contain a html head section which links to a .css file.
