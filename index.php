@@ -10,6 +10,7 @@ require __DIR__ . '/header.php';
             <th>LEAGUE</th>
             <th>LAST CHAMPIONSHIP WIN</th>
             <th>CITY</th>
+            <th>NICKNAME</th>
             <th>HOMEPAGE</th>
         </tr>
     </thead>
@@ -17,7 +18,6 @@ require __DIR__ . '/header.php';
         <?php require __DIR__ . '/print-data.php'; ?>
     </tbody>
 </table>
-
 </body>
 
 </html>
