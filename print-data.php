@@ -10,14 +10,14 @@ foreach ($teams as $teamName => $teamData) : ?>
         <?php if ($teamData['last-time-champions'] !== null) { ?>
             <td><?= $teamData['last-time-champions']; ?></td>
         <?php } else { ?>
-            <td><?= "Never" ?></td>
+            <td><?= 'Never'; ?></td>
         <?php } ?>
         <td><?= ucwords($teamData['city']); ?></td>
         <!--The following if statement prints the team's nickname if there is a 'nickname' key in their array, and "None" if there isn't.-->
         <?php if (array_key_exists('nickname', $teamData)) { ?>
             <td><?= ucwords($teamData['nickname']); ?></td>
         <?php } else { ?>
-            <td><?= "None"; ?></td>
+            <td><?= 'None'; ?></td>
         <?php } ?>
         <!--Using strtolower() and printing the substring of the url excluding "https://www.", and utilizing the whole url for the anchor href.-->
         <td><a href="<?= $teamData['url']; ?>"><?= strtolower(substr($teamData['url'], 12, -1)); ?></td>
