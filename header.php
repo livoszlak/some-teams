@@ -13,5 +13,6 @@
 
 <body>
     <div class="header">
+        <!--The header calls on teams.php to print out the total number of teams in the $teams array into the h1.-->
         <h1>SOME (<?php require __DIR__ . '/teams.php'; ?>) TEAMS</h1>
     </div>

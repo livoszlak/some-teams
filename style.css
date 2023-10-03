@@ -1,3 +1,10 @@
+:root {
+  --bg-grey: #9f9d9d;
+  --bg-white: #dddddd;
+  --link: #b321c0;
+  --link-hover: #5921c0;
+}
+
 body {
   background-image: url("/assets/bg.jpg");
   background-size: cover;
@@ -18,7 +25,7 @@ table {
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dddddd;
+  background-color: var(--bg-white);
   opacity: 80%;
 }
 
@@ -36,7 +43,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #9f9d9d;
+  background-color: var(--bg-grey);
 }
 
 tr:last-child {
@@ -48,7 +55,7 @@ tr:last-child {
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
-  color: #dddddd;
+  color: var(--bg-white);
 }
 
 .header h1 {
@@ -58,15 +65,15 @@ tr:last-child {
 
 a {
   text-decoration: none;
-  color: rgb(179, 33, 192);
+  color: var(--link);
 }
 
 a:hover {
-  color: rgb(89, 33, 192);
+  color: var(--link-hover);
 }
 
 .marquee-header {
-  background-color: #dddddd;
+  background-color: var(--bg-white);
   opacity: 80%;
   margin: 0 auto;
   font-family: "Dosis", sans-serif;
@@ -86,7 +93,7 @@ a:hover {
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
-  background-color: #dddddd;
+  background-color: var(--bg-white);
   border-radius: 15px;
   opacity: 80%;
 }
