@@ -17,7 +17,17 @@ require __DIR__ . '/header.php';
         <?php require __DIR__ . '/print-data.php'; ?>
     </tbody>
 </table>
-<div class="cities"><?php require __DIR__ . '/city-values.php'; ?></div>
+<div class="marquee-header">FEATURING TEAMS FROM</div>
+<div class="marquee">
+    <div class="marquee--inner">
+        <span>
+            <?php require __DIR__ . '/city-values.php'; ?>
+        </span>
+        <span>
+            <?php require __DIR__ . '/city-values.php'; ?>
+        </span>
+    </div>
+</div>
 </body>
 
 </html>

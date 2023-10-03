@@ -4,7 +4,7 @@ require __DIR__ . '/data.php'; ?>
 <?php foreach ($teams as $teamName => $teamData) : ?>
     <tr>
         <td><?= $teamName; ?></td>
-        <td><?= $teamData['league']; ?></td>
+        <td><?= ucwords($teamData['league']); ?></td>
         <?php if ($teamData['last-time-champions'] !== null) : ?>
             <td><?= $teamData['last-time-champions']; ?></td>
         <?php else : ?>
@@ -18,4 +18,4 @@ require __DIR__ . '/data.php'; ?>
         <?php endif; ?>
         <td><a href="<?= $teamData['url']; ?>"><?= substr($teamData['url'], 12, -1); ?></td>
     </tr>
-<?php endforeach; ?>
+<?php endforeach ?>

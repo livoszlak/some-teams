@@ -1,9 +1,15 @@
 body {
+  background-image: url("/assets/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   margin-top: 60px;
+  font-family: arial, sans-serif;
 }
 
 table {
@@ -16,8 +22,7 @@ table {
   opacity: 80%;
 }
 
-th,
-.cities {
+th {
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -38,22 +43,6 @@ tr:last-child {
   margin-right: 10px;
 }
 
-.cities {
-  background-color: #dddddd;
-  opacity: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  font-size: 2rem;
-  justify-content: space-around;
-  padding: 10px 10px;
-  border-radius: 15px;
-}
-
-.city {
-  padding: 0 25px;
-}
-
 .header {
   font-family: "Bungee Shade", cursive;
   font-weight: 400;
@@ -67,11 +56,6 @@ tr:last-child {
   display: inline;
 }
 
-body {
-  background-image: url("/assets/bg.jpg");
-  background-size: cover;
-}
-
 a {
   text-decoration: none;
   color: rgb(179, 33, 192);
@@ -79,4 +63,51 @@ a {
 
 a:hover {
   color: rgb(89, 33, 192);
+}
+
+.marquee-header {
+  background-color: #dddddd;
+  opacity: 80%;
+  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+.marquee {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  height: 50px;
+  width: 920px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  background-color: #dddddd;
+  border-radius: 15px;
+  opacity: 80%;
+}
+
+.marquee--inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+  animation: marquee 20s linear infinite;
+}
+
+span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
