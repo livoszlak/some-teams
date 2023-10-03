@@ -20,6 +20,6 @@ foreach ($teams as $teamName => $teamData) : ?>
             <td><?= 'None'; ?></td>
         <?php } ?>
         <!--Using strtolower() and printing the substring of the url excluding "https://www.", and utilizing the whole url for the anchor href.-->
-        <td><a href="<?= $teamData['url']; ?>"><?= strtolower(substr($teamData['url'], 12, -1)); ?></td>
+        <td><a href="<?= $teamData['url']; ?>"><?= strtolower(substr($teamData['url'], 12)); ?></td>
     </tr>
 <?php endforeach; ?>
