@@ -50,7 +50,7 @@ tr:last-child {
   margin-right: 10px;
 }
 
-.header {
+body > .header {
   font-family: 'Bungee Shade', cursive;
   font-weight: 400;
   font-size: 3rem;
